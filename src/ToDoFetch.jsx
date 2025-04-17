@@ -26,7 +26,7 @@ const ToDoFetch = () => {
     <div className="icerik">
       <Input placeholder="Ara..." onChange={inputViewer}></Input>
       {filteredTodos.map((todo) => (
-        <Link to={"/todo/${todo.id}"} style={{ textDecoration: 'none' }} key={todo.id}>
+        <Link to={`/todo/${todo.id}`} style={{ textDecoration: 'none' }} key={todo.id}>
           <Card style={{ marginTop: "20px" }}>
             {todo.todo_name}
           </Card>
